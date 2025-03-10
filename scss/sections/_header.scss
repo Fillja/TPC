@@ -1,0 +1,28 @@
+header{
+    padding: 2rem 0;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header-logo{
+            width: 6rem;
+        }
+
+        .header-menu{
+            display: flex;
+            gap: 1rem;
+
+            .link{
+                font-size: 1.5rem;
+            }
+        }
+
+        .mobile-menu{
+
+            .burger-menu{
+                width: 2.5rem;
+            }
+        }
+    }
+}

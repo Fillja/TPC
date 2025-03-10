@@ -1,0 +1,67 @@
+footer{
+    padding: 2rem 0;
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+
+        @include mobile{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .brand-information{
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+
+            .footer-logo{
+                width: 6rem;
+            }
+
+            .footer-socials{
+                display: flex;
+                gap: .5rem;
+
+                .social-link{
+                    width: 2rem;
+                }
+            }
+        }
+
+        .contact-information{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: .5rem;
+        }
+
+        .search-container{
+            display: flex;
+            align-items: center;
+            
+            .search-bar{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: solid 1px var(--color-dark);
+                border-radius: 30px;
+                padding: 1rem;
+                width: 50%;
+    
+                @include mobile{
+                    width: 100%;
+                }
+    
+                .search-glass{
+                    width: 1rem;
+                }
+                
+                .search-input{
+                    border: none;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

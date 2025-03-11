@@ -1,5 +1,5 @@
 header{
-    padding: 2rem 0;
+
     .container{
         display: flex;
         justify-content: space-between;
@@ -20,8 +20,56 @@ header{
 
         .mobile-menu{
 
-            .burger-menu{
+            .menu-button{
+                background-color: transparent;
+                border: none;
+            }
+
+            .menu-icon{
                 width: 2.5rem;
+            }
+
+            #burger-menu{
+                background-color: var(--color-light);
+                z-index: 100;
+                position: fixed;
+                top: 0;
+                right: 0;
+                height: 100dvh;
+                width: 100%;
+                padding-top: 2rem;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
+                transform: translateX(100%);
+                transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out; 
+            
+                &.hidden { 
+                    opacity: 0;
+                    transform: translateX(100%); 
+                    pointer-events: none; 
+                }
+            
+                &:not(.hidden) {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+
+                .menu-button{
+                    align-self: start;
+                    padding: 0 2rem;
+                }
+                
+                .link{
+                    font-size: 3rem;
+                    padding: 0 2rem;
+                    border-bottom: solid 1px var(--color-dark);
+
+                    &:hover{
+                        background-color: var(--color-gray);
+                    }
+                }
             }
         }
     }

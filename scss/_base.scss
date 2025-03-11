@@ -21,6 +21,11 @@ html, body, section, div, header, footer, main, aside, nav, blockquote, p, span,
     margin-right: auto;
 }
 
+.hidden{
+    transform: translateX(100%); /* Move off-screen */
+    pointer-events: none; /* Prevent clicks when hidden */
+}
+
 .mobile-hidden{
     @media(max-width: 768px){
         display: none !important;
@@ -54,6 +59,7 @@ html, body, section, div, header, footer, main, aside, nav, blockquote, p, span,
 
     @include mobile{
         flex-direction: row;
+        justify-content: space-between;
     }
 
     .text-container{
@@ -72,5 +78,17 @@ html, body, section, div, header, footer, main, aside, nav, blockquote, p, span,
             max-height: 100%;
         }
     }
+}
 
+.svg-wrapper{
+    border: solid 1px #000;
+    border-radius: 100%;
+    display: flex;
+    width: fit-content;
+}
+
+.svg-icon{
+    padding: 1rem;
+    width: 1.5rem;
+    height: auto;
 }

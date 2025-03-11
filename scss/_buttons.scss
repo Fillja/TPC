@@ -4,11 +4,11 @@
     font-size: 1.1rem;
     font-weight: 500;
     text-decoration: none;
-    color: var(--color-theme);
+    color: var(--color-dark);
     transition: all 0.25s ease-in-out;
 
     &:hover{
-        color: var(--color-secondary);
+        color: var(--color-theme);
         text-decoration: underline;
     }
 
@@ -19,7 +19,7 @@
 }
 
 .active-link{
-    color: var(--color-secondary);
+    color: var(--color-theme);
     text-decoration: underline;
 }
 

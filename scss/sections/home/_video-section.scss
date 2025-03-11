@@ -1,0 +1,18 @@
+.home-video-section{
+    padding: 1rem 1rem;
+
+    @include mobile{
+        padding: 3rem 0;
+    }
+
+    .showcase-video{
+        width: 100%;
+        height: auto;
+
+
+        @include mobile{
+            height: 80dvh;
+            object-fit: cover;
+        }
+    }
+}

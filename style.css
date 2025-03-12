@@ -450,7 +450,7 @@ footer .container .search-container .search-bar .search-input {
 }
 
 .home-video-section {
-  padding: 1rem 1rem;
+  padding: 1rem 0rem;
 }
 @media (min-width: 768px) {
   .home-video-section {

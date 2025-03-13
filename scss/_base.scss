@@ -22,8 +22,8 @@ html, body, section, div, header, footer, main, aside, nav, blockquote, p, span,
 }
 
 .hidden{
-    transform: translateX(100%); /* Move off-screen */
-    pointer-events: none; /* Prevent clicks when hidden */
+    transform: translateX(100%); 
+    pointer-events: none; 
 }
 
 .mobile-hidden{

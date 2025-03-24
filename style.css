@@ -13,6 +13,173 @@ html, body, section, div, header, footer, main, aside, nav, blockquote, p, span,
   padding: 0;
 }
 
+@font-face {
+  font-family: "Questrial";
+  src: url("/fonts/Questrial-Regular.ttf");
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-VariableFont_opsz,wght.ttf");
+}
+html, body {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 2rem;
+  font-family: "Questrial", sans-serif;
+}
+html h1, html h2, html h3, html h4, html h5, html h6, body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+html h1, body h1 {
+  font-size: 80px;
+}
+html h2, body h2 {
+  font-size: 50px;
+}
+html h3, body h3 {
+  font-size: 40px;
+}
+html h4, body h4 {
+  font-size: 30px;
+}
+html h5, body h5 {
+  font-size: 20px;
+}
+html h6, body h6 {
+  font-size: 18px;
+}
+
+:root {
+  --color-dark: #090909;
+  --color-light: #f9f9f9;
+  --color-fire: #b62020;
+  --color-chili: #D73626;
+  --color-cinnabar: #F04D23;
+}
+
+.bg-light {
+  background-color: var(--color-light);
+  color: var(--colo-dark);
+}
+
+.bg-dark {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+.bg-dark .btn-dark:hover, .bg-dark .btn-light:hover {
+  background-color: var(--color-chili);
+  border-color: var(--color-chili);
+  color: var(--color-light);
+}
+.bg-dark .link {
+  color: var(--color-light);
+}
+
+.link {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--color-dark);
+  transition: all 0.25s ease-in-out;
+}
+.link:hover {
+  color: var(--color-fire);
+  text-decoration: underline;
+}
+.link i {
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.active-link {
+  color: var(--color-theme);
+  text-decoration: underline;
+}
+
+.footer-link {
+  color: var(--color-dark);
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+}
+.footer-link:hover {
+  color: var(--color-theme);
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 15px 40px;
+  font-size: 16px;
+  transition: all 0.25s ease-in-out;
+  text-decoration: none;
+}
+.btn i {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.btn-fire {
+  background-color: var(--color-fire);
+  border: 1px solid var(--color-fire);
+  color: var(--color-light);
+}
+.btn-fire:hover {
+  background-color: var(--color-cinnabar);
+  border-color: var(--color-cinnabar);
+  color: var(--color-dark);
+}
+
+.btn-chili {
+  background-color: var(--color-chili);
+  border: 1px solid var(--color-chili);
+  color: var(--color-light);
+}
+.btn-chili:hover {
+  background-color: var(--color-cinnabar);
+  border-color: var(--color-cinnabar);
+  color: var(--color-dark);
+}
+
+.btn-cinnabar {
+  background-color: var(--color-cinnabar);
+  border: 1px solid var(--color-cinnabar);
+  color: var(--color-dark);
+}
+.btn-cinnabar:hover {
+  background-color: var(--color-fire);
+  border-color: var(--color-fire);
+  color: var(--color-light);
+}
+
+.btn-light {
+  background-color: var(--color-light);
+  border: 1px solid var(--color-dark);
+  color: var(--color-dark);
+}
+.btn-light:hover {
+  background-color: var(--color-dark);
+  border-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+.btn-dark {
+  background-color: var(--color-dark);
+  border: 1px solid var(--color-light);
+  color: var(--color-light);
+}
+.btn-dark:hover {
+  background-color: transparent;
+  border-color: var(--color-dark);
+  color: var(--color-dark);
+}
+
 .container {
   position: relative;
   padding-right: 1rem;
@@ -66,7 +233,7 @@ html, body, section, div, header, footer, main, aside, nav, blockquote, p, span,
   }
 }
 .image-text-container .text-container h1, .image-text-container .text-container h2, .image-text-container .text-container h3, .image-text-container .text-container h4, .image-text-container .text-container h5, .image-text-container .text-container h6 {
-  margin-bottom: 1rem;
+  padding-bottom: 2.5rem;
 }
 @media (min-width: 768px) {
   .image-text-container .image-container {
@@ -92,158 +259,13 @@ html, body, section, div, header, footer, main, aside, nav, blockquote, p, span,
   height: auto;
 }
 
-html, body {
-  font-size: 1rem;
-  font-weight: 300;
-}
-html h1, html h2, html h3, html h4, html h5, html h6, body h1, body h2, body h3, body h4, body h5, body h6 {
-  font-weight: 700;
-}
-html h1, body h1 {
-  font-size: 80px;
-}
-html h2, body h2 {
-  font-size: 50px;
-}
-html h3, body h3 {
-  font-size: 40px;
-}
-html h4, body h4 {
-  font-size: 30px;
-}
-html h5, body h5 {
-  font-size: 20px;
-}
-html h6, body h6 {
-  font-size: 18px;
-}
-
-:root {
-  --color-dark: #191919;
-  --color-gray: #f3f3f3;
-  --color-light: #f9f9f9;
-  --color-theme: #f04d23;
-  --color-secondary: #b62020;
-  --color-success: #0F8A3E;
-  --color-danger: #D73C4C;
-  --color-warning: #a36700;
-}
-
-.danger {
-  color: var(--color-danger);
-}
-
-.success {
-  color: var(--color-success);
-}
-
-.warning {
-  color: var(--color-warning);
-}
-
-.bg-light {
-  background-color: var(--color-light);
-}
-
-.bg-gray {
-  background-color: var(--color-gray);
-}
-
-.bg-dark {
-  background-color: var(--color-dark);
-  color: var(--color-light);
-}
-.bg-dark .btn:hover {
-  background-color: transparent;
-  border-color: var(--color-light);
-}
-.bg-dark .btn-black {
-  background-color: var(--color-light);
-  border: 1px solid var(--color-light);
-  color: var(--color-dark);
-}
-.bg-dark .btn-black:hover {
-  color: var(--color-light);
-}
-
-.link {
-  display: inline-block;
-  cursor: pointer;
-  font-size: 1.1rem;
-  font-weight: 500;
-  text-decoration: none;
-  color: var(--color-dark);
-  transition: all 0.25s ease-in-out;
-}
-.link:hover {
-  color: var(--color-theme);
-  text-decoration: underline;
-}
-.link i {
-  margin-left: 0.5rem;
-  font-size: 0.9rem;
-}
-
-.active-link {
-  color: var(--color-theme);
-  text-decoration: underline;
-}
-
-.footer-link {
-  color: var(--color-dark);
-  text-decoration: none;
-  transition: all 0.25s ease-in-out;
-}
-.footer-link:hover {
-  color: var(--color-theme);
-  text-decoration: underline;
-}
-
-.btn {
-  display: inline-block;
-  cursor: pointer;
-  font-size: 1.5rem;
-  font-weight: 600;
-  border-radius: 3px;
-  padding: 15px 40px;
-  font-size: 16px;
-  transition: all 0.25s ease-in-out;
-  text-decoration: none;
-}
-.btn i {
-  font-size: 1rem;
-  margin-left: 0.5rem;
-}
-
-.btn-theme {
-  background-color: var(--color-theme);
-  border: 1px solid var(--color-theme);
-  color: var(--color-dark);
-}
-.btn-theme:hover {
-  background-color: var(--color-secondary);
-  border-color: var(--color-secondary);
-  color: var(--color-light);
-}
-
-.btn-black {
-  background-color: var(--color-dark);
-  border: 1px solid var(--color-dark);
-  color: var(--color-light);
-}
-.btn-black:hover {
-  background-color: transparent;
-  border-color: var(--color-dark);
-  color: var(--color-dark);
-}
-
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 header .container .header-logo {
-  width: 6rem;
+  width: 10rem;
 }
 header .container .header-menu {
   display: flex;

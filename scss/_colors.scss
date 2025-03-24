@@ -1,52 +1,31 @@
 :root{
-    --color-dark: #191919;
-    --color-gray: #f3f3f3;
+    --color-dark: #090909;
     --color-light: #f9f9f9;
-    --color-theme: #f04d23;
-    --color-secondary: #b62020;
-    --color-success: #0F8A3E;
-    --color-danger: #D73C4C;
-    --color-warning: #a36700;
-}
-
-//ALERT COLORS
-.danger{
-    color: var(--color-danger);
-}
-
-.success{
-    color: var(--color-success);
-}
-
-.warning{
-    color: var(--color-warning);
+    --color-fire: #b62020;
+    --color-chili: #D73626;
+    --color-cinnabar: #F04D23;
 }
 
 //BACKGROUND COLORS
 .bg-light{
     background-color: var(--color-light);
-}
-
-.bg-gray{
-    background-color: var(--color-gray);
+    color: var(--colo-dark);
 }
 
 .bg-dark{
     background-color: var(--color-dark);
     color: var(--color-light);
 
-    .btn:hover{
-        background-color: transparent;
-        border-color: var(--color-light);
-    }
-
-    .btn-black{
-        background-color: var(--color-light);
-        border: 1px solid var(--color-light);
-        color: var(--color-dark);
+    .btn-dark, .btn-light{
     
         &:hover{
+            background-color: var(--color-chili);
+            border-color: var(--color-chili);
             color: var(--color-light);
         }
+    }
+
+    .link{
+        color: var(--color-light);
     }
 }

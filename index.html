@@ -8,11 +8,11 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header id="header">
+    <header class="bg-dark">
         <div class="container header-content">
 
             <a href="#">
-                <img id="header-logo" class="header-logo" src="./images/tpc-dark.svg" alt="TPC-logo">
+                <img id="header-logo" class="header-logo" src="./images/tpc-light.svg" alt="TPC-logo">
             </a>
 
             <nav class="header-menu mobile-hidden">
@@ -23,13 +23,26 @@
             </nav>
 
             <div class="mobile-menu desktop-hidden">
-                <button id="burger-button" class="menu-button"><img class="menu-icon" src="/images/icons/icon-burger-menu.svg" alt="burger-menu"></button>
+                <button id="burger-button" class="menu-button"><img class="menu-icon svg-light" src="/images/icons/icon-burger-menu.svg" alt="burger-menu"></button>
                 <nav id="burger-menu" class="hidden">
-                    <button id="close-button" class="menu-button"><img class="menu-icon" src="/images/icons/icon-cross.svg" alt="burger-menu"></button>
-                    <a href="#" class="link">Home</a>
-                    <a href="#" class="link">Services</a>
-                    <a href="#" class="link">About</a>
-                    <a href="#" class="link">Contact</a>
+                    <div class="burger-top reveal">
+                        <button id="close-button" class="menu-button"><img class="menu-icon svg-light" src="/images/icons/icon-cross.svg" alt="burger-menu"></button>
+                        <a href="#" class="link">Home</a>
+                        <a href="#" class="link">Services</a>
+                        <a href="#" class="link">About</a>
+                        <a href="#" class="link">Contact</a>
+                    </div>
+                    <div class="burger-bottom reveal">
+                        <a href="https://facebook.com" target="_blank">
+                            <img class="social-link svg-light" src="./images/icons/icon-facebook.svg" alt="facebook-logo">
+                        </a>
+                        <a href="https://instagram.com" target="_blank">
+                            <img class="social-link svg-light" src="./images/icons/icon-instagram.svg" alt="instagram-logo">
+                        </a>
+                        <a href="https://linkedin.com" target="_blank">
+                            <img class="social-link svg-light" src="/images/icons/icon-linkedin.svg" alt="linkedin-logo">
+                        </a>
+                    </div>
                 </nav>
             </div>
 
@@ -39,18 +52,18 @@
     <main>
 
         <!-- HOME - HERO -->
-        <section class="home-hero-section">
-            <div class="container">
+        <section class="home-hero-section bg-cinnabar">
+            <div class="container reveal">
 
-                <div class="image-text-container">
+                <div class="image-text-container ">
                     
                     <div class="text-container">
-                        <h1>Hero Header</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium corrupti praesentium, cumque quis officia distinctio, cum deleniti quos inventore unde dicta, doloribus excepturi ipsum dolore delectus quo! Minima, est excepturi!</p>
+                        <h1>Threat Prevention</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
                     </div>
 
                     <div class="image-container">
-                        <img class="hero-image" src="./images/Laptop-image.jpg" alt="hero-image">
+                        <img class="hero-image" src="./images/laptop-image.jpg" alt="hero-image">
                     </div>
 
                 </div>
@@ -66,7 +79,7 @@
                         <p class="fold-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aperiam velit aspernatur nam laborum quo sequi ea, quidem quos ut natus possimus error harum exercitationem reiciendis iste inventore alias et?</p>
                     </div>
                     <div class="fold-container">
-                        <h6 class="fold-heading">Fold</h6>
+                        <h6 class="fold-heading">Folding</h6>
                         <p class="fold-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aperiam velit aspernatur nam laborum quo sequi ea, quidem quos ut natus possimus error harum exercitationem reiciendis iste inventore alias et?</p>
                     </div>
 
@@ -76,18 +89,20 @@
         </section>
 
         <!-- HOME - INFORMATION -->
-        <section class="home-information-section">
-            <div class="container">
+        <section class="home-information-section bg-chili">
+            <div class="container reveal">
 
                 <div class="image-text-container">
 
                     <div class="image-container">
-                        <img class="information-image" src="./images/Laptop-image.jpg" alt="information-image">
+                        <img class="information-image" src="./images/presentation-image.jpg" alt="information-image">
                     </div>
     
                     <div class="text-container">
                         <h2>Information Header</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium corrupti praesentium, cumque quis officia distinctio, cum deleniti quos inventore unde dicta, doloribus excepturi ipsum dolore delectus quo! Minima, est excepturi!</p>
+                        <br>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
                     </div>
 
                 </div>
@@ -96,8 +111,8 @@
         </section>
 
         <!-- HOME - PARTNERS -->
-        <section class="home-partners-section">
-            <div class="container">
+        <section class="home-partners-section bg-fire">
+            <div class="container reveal">
                 
                 <h2>Partners</h2>
                 <div class="partners-container mobile-hidden">
@@ -134,8 +149,8 @@
         </section>
 
         <!-- HOME - VIDEO -->
-        <section class="home-video-section">
-            <div class="container">
+        <section class="home-video-section bg-chili">
+            <div class="container reveal">
 
                 <video class="showcase-video" autoplay muted loop>
                     <source src="./videos/Laptop-video.mp4" type="video/mp4">
@@ -145,38 +160,38 @@
         </section>
         
         <!-- HOME - CONTACT -->
-        <section class="home-contact-section">
-            <div class="container">
+        <section class="home-contact-section bg-cinnabar">
+            <div class="container reveal">
 
                 <div class="image-text-container">
                         
                     <div class="text-container">
-                        <h2>Contact Header</h2>
+                        <h2>Let us get in touch</h2>
                         <ul class="bullet-list-container">
 
                             <li class="bullet-list">
                                 <div class="svg-wrapper">
-                                    <img class="svg-icon" src="./images/icons/icon-laptop.svg">
+                                    <img class="svg-icon" src="./images/icons/icon-phone.svg">
                                 </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a class="link" href="#" target="_blank">0760 XX XX XX</a>
                             </li>
                             <li class="bullet-list">
                                 <div class="svg-wrapper">
-                                    <img class="svg-icon" src="./images/icons/icon-laptop.svg">
+                                    <img class="svg-icon" src="./images/icons/icon-envelope.svg">
                                 </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a class="link" href="#" target="_blank">david@tpc.com</a>
                             </li>
                             <li class="bullet-list">
                                 <div class="svg-wrapper">
-                                    <img class="svg-icon" src="./images/icons/icon-laptop.svg">
+                                    <img class="svg-icon" src="./images/icons/icon-map-pin.svg">
                                 </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a class="link" href="#" target="_blank">Gatan 20, 123 45, Stockholm</a>
                             </li>
                             <li class="bullet-list">
                                 <div class="svg-wrapper">
-                                    <img class="svg-icon" src="./images/icons/icon-laptop.svg">
+                                    <img class="svg-icon" src="./images/icons/icon-linkedin-alt.svg">
                                 </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a class="link" href="https://www.linkedin.com/in/djacoby/" target="_blank">David Jacoby</a>
                             </li>
 
                         </ul>
@@ -184,7 +199,7 @@
                     </div>
 
                     <div class="image-container">
-                        <img class="contact-image" src="./images/Laptop-image.jpg" alt="contact-image">
+                        <img class="contact-image" src="./images/contact-image.jpg" alt="contact-image">
                     </div>
 
                 </div>
@@ -195,45 +210,45 @@
     </main>
 
     <!-- FOOTER -->
-    <footer>
+    <footer class="bg-dark">
         <div class="container">
 
             <div class="brand-information">
                 <a href="#">
-                    <img class="footer-logo" src="./images/Bird-logo.png" alt="TPC-logo">
+                    <img class="footer-logo" src="./images/tpc-light.svg" alt="TPC-logo">
                 </a>
                 <h6>Threat Prevention Center</h6>
                 <div class="footer-socials">
                     <a href="https://facebook.com" target="_blank">
-                        <img class="social-link" src="./images/icons/icon-facebook.svg" alt="facebook-logo">
+                        <img class="social-link svg-light" src="./images/icons/icon-facebook.svg" alt="facebook-logo">
                     </a>
                     <a href="https://instagram.com" target="_blank">
-                        <img class="social-link" src="./images/icons/icon-instagram.svg" alt="instagram-logo">
+                        <img class="social-link svg-light" src="./images/icons/icon-instagram.svg" alt="instagram-logo">
                     </a>
                     <a href="https://linkedin.com" target="_blank">
-                        <img class="social-link" src="/images/icons/icon-linkedin.svg" alt="linkedin-logo">
+                        <img class="social-link svg-light" src="/images/icons/icon-linkedin.svg" alt="linkedin-logo">
                     </a>
                 </div>
             </div>
 
             <div class="contact-information">
                 <div>
-                    <a class="link" href="#">david@tpc.com</a>
+                    <a class="link" href="#" target="_blank">david@tpc.com</a>
                 </div>
                 <div>
-                    <a class="link" href="#">0701 23 45 67</a>
+                    <a class="link" href="#" target="_blank">0701 23 45 67</a>
                 </div>
                 <div>
-                    <a class="link" href="#">Gatan 20, 123 45, Stockholm</a>
+                    <a class="link" href="#" target="_blank">Gatan 20, 123 45, Stockholm</a>
                 </div>
                 <div>
-                    <a class="link" href="#">Our policy</a>
+                    <a class="link" href="#" target="_blank">Our policy</a>
                 </div>
             </div>
 
             <div class="search-container">
                 <label for="search-input" class="search-bar">
-                    <img class="search-glass" src="./images/icons/icon-magnifying-glass.svg">
+                    <img class="search-glass svg-light" src="./images/icons/icon-magnifying-glass.svg">
                     <input id="search-input" class="search-input">
                 </label>
             </div>

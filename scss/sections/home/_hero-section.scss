@@ -1,5 +1,4 @@
 .home-hero-section{
-padding: 3rem 0;
 
     .container{
 
@@ -27,7 +26,7 @@ padding: 3rem 0;
                 }
 
                 .fold-heading{
-                    background-color: #fff;
+                    background-color: var(--color-cinnabar);
                     position: absolute;
                     top: -1.5rem;
                     padding: .5rem 1rem;

@@ -1,3 +1,4 @@
+//GENERIC COMPONENTS
 .container{
     position: relative;
     padding-right: 1rem;
@@ -13,6 +14,12 @@
 
 .mobile-hidden{
     @media(max-width: 768px){
+        display: none !important;
+    }
+}
+
+.tablet-hidden{
+    @media(max-width: 996px){
         display: none !important;
     }
 }
@@ -42,7 +49,7 @@
     flex-direction: column;
     gap: 3rem;
 
-    @include mobile{
+    @include tablet{
         flex-direction: row;
         justify-content: space-between;
     }
@@ -54,38 +61,64 @@
     }
     
     .image-container{
-        @include mobile{
+        @include tablet{
             max-width: 50%;
         }
         
         img{
             max-width: 100%;
             max-height: 100%;
+            height: 100%;
         }
     }
 }
 
-.svg-wrapper{
-    border: solid 1px #000;
+// SVG STYLING
+.svg-icon{
+    height: auto;
+    transition: filter .25s ease-in-out;
+}
+
+.svg-large{
+    width: 3rem;
+}
+
+.svg-medium{
+    width: 2rem;
+}
+
+.svg-small{
+    width: 1.5rem;
+}
+
+.svg-border{
+    border: solid 1px var(--color-light);
     border-radius: 100%;
     display: flex;
     width: fit-content;
 }
 
-.svg-icon{
-    padding: 1rem;
-    width: 1.5rem;
-    height: auto;
+.svg-wrapper{
+    align-self: end;
 }
 
 .svg-light{
-    filter: invert(98%) sepia(5%) saturate(847%) hue-rotate(227deg) brightness(116%) contrast(95%);
+    @include svg-light;
 }
 
 .svg-dark{
-    filter: invert(0%) sepia(7%) saturate(2656%) hue-rotate(14deg) brightness(96%) contrast(93%);
+    @include svg-dark;
 }
 
+.svg-fire{
+    @include svg-fire;
+}
+
+.svg-cinnabar{
+    @include svg-cinnabar;
+}
+
+//SCROLL REVEAL STYLING
 .reveal{
     position: relative;
     transform: translateY(100px);

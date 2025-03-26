@@ -14,5 +14,9 @@ html, body, div, header, footer, main, aside, nav, blockquote, p, span, h1, h2, 
 }
 
 section{
-    padding: 4rem 0;
+    padding: 5rem 0;
+}
+
+.rounded-image, video{
+    border-radius: 30px !important;
 }

@@ -8,11 +8,11 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header class="bg-dark">
-        <div class="container header-content">
+    <header class="bg-light">
+        <div class="container">
 
             <a href="#">
-                <img id="header-logo" class="header-logo" src="./images/tpc-light.svg" alt="TPC-logo">
+                <img id="header-logo" class="header-logo" src="./images/tpc-dark.svg" alt="TPC-logo">
             </a>
 
             <nav class="header-menu mobile-hidden">
@@ -22,11 +22,13 @@
                 <a href="#" class="link">Contact</a>
             </nav>
 
+            <a class="tablet-hidden btn btn-dark">UNBREACHED<img class="svg-small svg-cinnabar svg-icon" src="./images/icons/icon-arrow-up-right.svg"></a>
+
             <div class="mobile-menu desktop-hidden">
-                <button id="burger-button" class="menu-button"><img class="menu-icon svg-light" src="/images/icons/icon-burger-menu.svg" alt="burger-menu"></button>
+                <button id="burger-button" class="menu-button"><img class="menu-icon svg-dark" src="/images/icons/icon-burger-menu.svg" alt="burger-menu"></button>
                 <nav id="burger-menu" class="hidden">
                     <div class="burger-top reveal">
-                        <button id="close-button" class="menu-button"><img class="menu-icon svg-light" src="/images/icons/icon-cross.svg" alt="burger-menu"></button>
+                        <button id="close-button" class="menu-button"><img class="menu-icon svg-dark" src="/images/icons/icon-cross.svg" alt="burger-menu"></button>
                         <a href="#" class="link">Home</a>
                         <a href="#" class="link">Services</a>
                         <a href="#" class="link">About</a>
@@ -34,13 +36,13 @@
                     </div>
                     <div class="burger-bottom reveal">
                         <a href="https://facebook.com" target="_blank">
-                            <img class="social-link svg-light" src="./images/icons/icon-facebook.svg" alt="facebook-logo">
+                            <img class="social-link svg-dark" src="./images/icons/icon-facebook.svg" alt="facebook-logo">
                         </a>
                         <a href="https://instagram.com" target="_blank">
-                            <img class="social-link svg-light" src="./images/icons/icon-instagram.svg" alt="instagram-logo">
+                            <img class="social-link svg-dark" src="./images/icons/icon-instagram.svg" alt="instagram-logo">
                         </a>
                         <a href="https://linkedin.com" target="_blank">
-                            <img class="social-link svg-light" src="/images/icons/icon-linkedin.svg" alt="linkedin-logo">
+                            <img class="social-link svg-dark" src="/images/icons/icon-linkedin.svg" alt="linkedin-logo">
                         </a>
                     </div>
                 </nav>
@@ -52,36 +54,45 @@
     <main>
 
         <!-- HOME - HERO -->
-        <section class="home-hero-section bg-cinnabar">
+        <section class="home-hero-section bg-dark">
             <div class="container reveal">
 
                 <div class="image-text-container ">
                     
                     <div class="text-container">
                         <h1>Threat Prevention</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
+                        <p>Protect your business with an extensive cybersecurity service – We handle everything for you, from using advanced cybersecurity tools and analyzing technical reports to providing expert advice and creating simple, effective actions for your vulnerabilities.</p>
                     </div>
 
                     <div class="image-container">
-                        <img class="hero-image" src="./images/laptop-image.jpg" alt="hero-image">
+                        <img class="rounded-image hero-image" src="./images/laptop-image.jpg" alt="hero-image">
                     </div>
 
                 </div>
 
                 <div class="above-the-fold">
 
-                    <div class="fold-container">
-                        <h6 class="fold-heading">Fold</h6>
-                        <p class="fold-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aperiam velit aspernatur nam laborum quo sequi ea, quidem quos ut natus possimus error harum exercitationem reiciendis iste inventore alias et?</p>
-                    </div>
-                    <div class="fold-container">
-                        <h6 class="fold-heading">Fold</h6>
-                        <p class="fold-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aperiam velit aspernatur nam laborum quo sequi ea, quidem quos ut natus possimus error harum exercitationem reiciendis iste inventore alias et?</p>
-                    </div>
-                    <div class="fold-container">
-                        <h6 class="fold-heading">Folding</h6>
-                        <p class="fold-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aperiam velit aspernatur nam laborum quo sequi ea, quidem quos ut natus possimus error harum exercitationem reiciendis iste inventore alias et?</p>
-                    </div>
+                    <a href="#" class="fold-container bg-fire">
+                        <div class="svg-wrapper">
+                            <img class="svg-icon svg-medium svg-light" src="./images/icons/icon-thin-arrow.svg">
+                        </div>
+                        <h4 class="fold-heading">COMPLETE SOLUTION - YOU DON'T NEED TO DECIDE</h4>
+                        <p class="fold-text">Small businesses often face challenges in finding the right products, unsure of what to buy and where to look. We’ve solved this by handpicking the best solutions for SMEs, simplifying the complicated buying process.</p>
+                    </a>
+                    <a href="#" class="fold-container bg-light">
+                        <div class="svg-wrapper">
+                            <img class="svg-icon svg-medium svg-dark" src="./images/icons/icon-thin-arrow.svg">
+                        </div>
+                        <h4 class="fold-heading">COST-EFFECTIVE FOR SME:S</h4>
+                        <p class="fold-text">We have negotiated the best prices on the market to give you cutting-edge security at an affordable rate. Avoid the costs of an in-house security department while getting comprehensive protection with no hidden fees.</p>
+                    </a>
+                    <a href="#" class="fold-container bg-cinnabar">
+                        <div class="svg-wrapper">
+                            <img class="svg-icon svg-medium svg-dark" src="./images/icons/icon-thin-arrow.svg">
+                        </div>
+                        <h4 class="fold-heading">EXPERIENCED EXPERTS AT YOUR SERVICE</h4>
+                        <p class="fold-text">Security often requires deep technical knowledge, but with us, you don't just receive automated tools, you gain access to a team of experts who continuously review, analyze, and secure your business against cyber threats, acting as your personal security advisor.</p>
+                    </a>
 
                 </div>
 
@@ -89,29 +100,35 @@
         </section>
 
         <!-- HOME - INFORMATION -->
-        <section class="home-information-section bg-chili">
+        <section class="home-information-section bg-light">
             <div class="container reveal">
 
                 <div class="image-text-container">
 
                     <div class="image-container">
-                        <img class="information-image" src="./images/presentation-image.jpg" alt="information-image">
+                        <img class="rounded-image information-image" src="./images/presentation-image-bright.jpg" alt="information-image">
                     </div>
     
-                    <div class="text-container">
-                        <h2>Information Header</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium corrupti praesentium, cumque quis officia distinctio, cum deleniti quos inventore unde dicta, doloribus excepturi ipsum dolore delectus quo! Minima, est excepturi!</p>
-                        <br>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <div class="text-container bg-light">
+                        <div class="svg-wrapper">
+                            <img class="svg-icon svg-large svg-dark" src="images/icons/icon-o.svg">
+                        </div>
+                        <h3>WHAT WE DO</h3>
+                        <div class="text-separation">
+                            <p>Our vision is that cybersecurity should not be a luxury or require deep technical knowledge to be effective.</p>
+                            <p>We empower SMEs to access the same level of cybersecurity as large corporations. We achieve this not only by offering state-of-the-art technologies, but also by incorporating the human element, making cybersecurity easy to understand and manage.</p>
+                            <p>We are more than just a service provider, we become an extension of your team. As your security advisor we work to protect your business, allowing you to focus on its growth.</p>
+                        </div>
                     </div>
 
                 </div>
 
             </div>
+
         </section>
 
         <!-- HOME - PARTNERS -->
-        <section class="home-partners-section bg-fire">
+        <section class="home-partners-section bg-dark">
             <div class="container reveal">
                 
                 <h2>Partners</h2>
@@ -149,7 +166,7 @@
         </section>
 
         <!-- HOME - VIDEO -->
-        <section class="home-video-section bg-chili">
+        <section class="home-video-section bg-light">
             <div class="container reveal">
 
                 <video class="showcase-video" autoplay muted loop>
@@ -160,7 +177,7 @@
         </section>
         
         <!-- HOME - CONTACT -->
-        <section class="home-contact-section bg-cinnabar">
+        <section class="home-contact-section bg-dark">
             <div class="container reveal">
 
                 <div class="image-text-container">
@@ -170,26 +187,26 @@
                         <ul class="bullet-list-container">
 
                             <li class="bullet-list">
-                                <div class="svg-wrapper">
-                                    <img class="svg-icon" src="./images/icons/icon-phone.svg">
+                                <div class="svg-border">
+                                    <img class="svg-icon svg-small svg-light" src="./images/icons/icon-phone.svg">
                                 </div>
                                 <a class="link" href="#" target="_blank">0760 XX XX XX</a>
                             </li>
                             <li class="bullet-list">
-                                <div class="svg-wrapper">
-                                    <img class="svg-icon" src="./images/icons/icon-envelope.svg">
+                                <div class="svg-border">
+                                    <img class="svg-icon svg-small svg-light" src="./images/icons/icon-envelope.svg">
                                 </div>
                                 <a class="link" href="#" target="_blank">david@tpc.com</a>
                             </li>
                             <li class="bullet-list">
-                                <div class="svg-wrapper">
-                                    <img class="svg-icon" src="./images/icons/icon-map-pin.svg">
+                                <div class="svg-border">
+                                    <img class="svg-icon svg-small svg-light" src="./images/icons/icon-map-pin.svg">
                                 </div>
                                 <a class="link" href="#" target="_blank">Gatan 20, 123 45, Stockholm</a>
                             </li>
                             <li class="bullet-list">
-                                <div class="svg-wrapper">
-                                    <img class="svg-icon" src="./images/icons/icon-linkedin-alt.svg">
+                                <div class="svg-border">
+                                    <img class="svg-icon svg-small svg-light" src="./images/icons/icon-linkedin-alt.svg">
                                 </div>
                                 <a class="link" href="https://www.linkedin.com/in/djacoby/" target="_blank">David Jacoby</a>
                             </li>
@@ -199,7 +216,7 @@
                     </div>
 
                     <div class="image-container">
-                        <img class="contact-image" src="./images/contact-image.jpg" alt="contact-image">
+                        <img class="rounded-image contact-image" src="./images/contact-image.jpg" alt="contact-image">
                     </div>
 
                 </div>
@@ -214,9 +231,11 @@
         <div class="container">
 
             <div class="brand-information">
-                <a href="#">
-                    <img class="footer-logo" src="./images/tpc-light.svg" alt="TPC-logo">
-                </a>
+                <div>
+                    <a href="#">
+                        <img class="footer-logo" src="./images/tpc-light.svg" alt="TPC-logo">
+                    </a>
+                </div>
                 <h6>Threat Prevention Center</h6>
                 <div class="footer-socials">
                     <a href="https://facebook.com" target="_blank">

@@ -9,25 +9,28 @@
 }
 
 .hidden{
-    visibility: hidden; // Ta bort för att få rätt animation på burger menu, men då renderas burger-menu en split-sekund vid page reload
+    visibility: hidden;
     transform: translateX(100%); 
     pointer-events: none; 
 }
 
 .mobile-hidden{
     @media(max-width: 768px){
+        visibility: hidden !important;
         display: none !important;
     }
 }
 
 .tablet-hidden{
     @media(max-width: 996px){
+        visibility: hidden !important;
         display: none !important;
     }
 }
 
 .desktop-hidden{
     @include mobile{
+        visibility: hidden !important;
         display: none !important;
     }
 }

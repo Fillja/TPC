@@ -10,7 +10,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+closeButton.addEventListener('click', () => {
+    burgerMenu.classList.add('hidden');
+    document.body.style.overflow = '';
+    
+    menuItems.forEach((item) => {
+        item.classList.remove('active');
+    });
+    
+    burgerMenu.addEventListener('transitionend', function handler(e) {
+        if (e.propertyName === 'transform') {  
+            burgerMenu.style.visibility = 'hidden';
+            burgerMenu.removeEventListener('transitionend', handler);
+        }
+    });
+});
+
 burgerButton.addEventListener('click', () => {
+    burgerMenu.style.visibility = 'visible';
     burgerMenu.classList.remove('hidden');
     document.body.style.overflow = 'hidden';
     
@@ -19,17 +36,7 @@ burgerButton.addEventListener('click', () => {
             item.classList.add('active');
         }, index * 100);
     });
-})
-
-closeButton.addEventListener('click', () => {
-    burgerMenu.classList.add('hidden')
-    document.body.style.overflow = '';
-    
-    menuItems.forEach((item) => {
-        item.classList.remove('active');
-    });
-})
-
+});
 
 
 // REVEAL SECTIONS ON SCROLL

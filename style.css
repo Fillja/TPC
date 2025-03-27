@@ -280,18 +280,21 @@ html h6, body h6 {
 
 @media (max-width: 768px) {
   .mobile-hidden {
+    visibility: hidden !important;
     display: none !important;
   }
 }
 
 @media (max-width: 996px) {
   .tablet-hidden {
+    visibility: hidden !important;
     display: none !important;
   }
 }
 
 @media (min-width: 768px) {
   .desktop-hidden {
+    visibility: hidden !important;
     display: none !important;
   }
 }

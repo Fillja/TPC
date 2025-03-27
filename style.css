@@ -389,46 +389,36 @@ img {
 }
 
 header {
-  background-color: var(--color-dark);
+  padding: 2rem 0;
 }
-header .header-background-container {
-  padding: 1rem 0;
-  border-radius: 30px;
-}
-header .header-background-container .container {
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .header-background-container .container .header-logo {
+header .container .header-logo {
   width: 10rem;
 }
-header .header-background-container .container .header-menu {
+header .container .header-menu {
   display: flex;
   gap: 3rem;
 }
-header .header-background-container .container .header-menu .link {
+header .container .header-menu .link {
   font-size: 1.1rem;
 }
-header .header-background-container .container .header-menu .link:hover {
-  color: var(--color-dark);
-}
-header .header-background-container .container .header-menu .link::after {
-  background-color: var(--color-dark);
-}
-header .header-background-container .container .btn {
+header .container .btn {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-header .header-background-container .container .mobile-menu .menu-button {
+header .container .mobile-menu .menu-button {
   background-color: transparent;
   border: none;
 }
-header .header-background-container .container .mobile-menu .menu-icon {
+header .container .mobile-menu .menu-icon {
   width: 2.5rem;
 }
-header .header-background-container .container .mobile-menu #burger-menu {
+header .container .mobile-menu #burger-menu {
   z-index: 100;
   position: fixed;
   top: 0;
@@ -441,31 +431,31 @@ header .header-background-container .container .mobile-menu #burger-menu {
   transform: translateX(100%);
   transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
 }
-header .header-background-container .container .mobile-menu #burger-menu.hidden {
+header .container .mobile-menu #burger-menu.hidden {
   opacity: 0;
   transform: translateX(100%);
   pointer-events: none;
 }
-header .header-background-container .container .mobile-menu #burger-menu:not(.hidden) {
+header .container .mobile-menu #burger-menu:not(.hidden) {
   opacity: 1;
   transform: translateX(0);
 }
-header .header-background-container .container .mobile-menu #burger-menu .burger-top {
+header .container .mobile-menu #burger-menu .burger-top {
   display: flex;
   flex-direction: column;
   gap: 3rem;
   padding: 3rem 2rem;
 }
-header .header-background-container .container .mobile-menu #burger-menu .burger-top .menu-button {
+header .container .mobile-menu #burger-menu .burger-top .menu-button {
   align-self: start;
 }
-header .header-background-container .container .mobile-menu #burger-menu .burger-top .menu-button .menu-icon {
+header .container .mobile-menu #burger-menu .burger-top .menu-button .menu-icon {
   width: 1.5rem;
 }
-header .header-background-container .container .mobile-menu #burger-menu .burger-top .link {
+header .container .mobile-menu #burger-menu .burger-top .link {
   font-size: 2.5rem;
 }
-header .header-background-container .container .mobile-menu #burger-menu .burger-bottom {
+header .container .mobile-menu #burger-menu .burger-bottom {
   display: flex;
   padding: 2rem;
   gap: 1rem;

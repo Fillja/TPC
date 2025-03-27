@@ -1,102 +1,89 @@
 header{
-    background-color: var(--color-dark);
-    
-    .header-background-container{
-        padding: 1rem 0;
-        border-radius: 30px;
+    padding: 2rem 0;
 
-        .container{
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header-logo{
+            width: 10rem;
+        }
+
+        .header-menu{
             display: flex;
-            justify-content: space-between;
+            gap: 3rem;
+
+            .link{
+                font-size: 1.1rem;
+            }
+        }
+
+        .btn{
+            display: flex;
             align-items: center;
-    
-            .header-logo{
-                width: 10rem;
-            }
-    
-            .header-menu{
-                display: flex;
-                gap: 3rem;
-    
-                .link{
-                    font-size: 1.1rem;
+            gap: .5rem;
+        }
 
-                    &:hover{
-                        color: var(--color-dark);
-                    }
+        .mobile-menu{
 
-                    &::after{
-                        background-color: var(--color-dark);
-                    }
-                }
+            .menu-button{
+                background-color: transparent;
+                border: none;
             }
-    
-            .btn{
+
+            .menu-icon{
+                width: 2.5rem;
+            }
+
+            #burger-menu{
+                z-index: 100;
+                position: fixed;
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
                 display: flex;
-                align-items: center;
-                gap: .5rem;
-            }
-    
-            .mobile-menu{
-    
-                .menu-button{
-                    background-color: transparent;
-                    border: none;
+                flex-direction: column;
+                justify-content: space-between;
+
+                transform: translateX(100%);
+                transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out; 
+            
+                &.hidden { 
+                    opacity: 0;
+                    transform: translateX(100%); 
+                    pointer-events: none; 
                 }
-    
-                .menu-icon{
-                    width: 2.5rem;
+            
+                &:not(.hidden) {
+                    opacity: 1;
+                    transform: translateX(0);
                 }
-    
-                #burger-menu{
-                    z-index: 100;
-                    position: fixed;
-                    top: 0;
-                    right: 0;
-                    height: 100%;
-                    width: 100%;
+
+                .burger-top{
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-between;
-    
-                    transform: translateX(100%);
-                    transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out; 
-                
-                    &.hidden { 
-                        opacity: 0;
-                        transform: translateX(100%); 
-                        pointer-events: none; 
-                    }
-                
-                    &:not(.hidden) {
-                        opacity: 1;
-                        transform: translateX(0);
-                    }
-    
-                    .burger-top{
-                        display: flex;
-                        flex-direction: column;
-                        gap: 3rem;
-                        padding: 3rem 2rem;
-                        
-                        .menu-button{
-                            align-self: start;
-    
-                            .menu-icon{
-                                width: 1.5rem;
-                            }
-                        }
-                        
-                        .link{
-                            font-size: 2.5rem;
+                    gap: 3rem;
+                    padding: 3rem 2rem;
+                    
+                    .menu-button{
+                        align-self: start;
+
+                        .menu-icon{
+                            width: 1.5rem;
                         }
                     }
-    
-                    .burger-bottom{
-                        display: flex;
-                        padding: 2rem;
-                        gap: 1rem;
+                    
+                    .link{
+                        font-size: 2.5rem;
                     }
+                }
+
+                .burger-bottom{
+                    display: flex;
+                    padding: 2rem;
+                    gap: 1rem;
                 }
             }
         }

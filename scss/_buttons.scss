@@ -126,15 +126,15 @@
 .btn-dark{
     background-color: var(--color-dark);
     border: 1px solid var(--color-dark);
-    color: var(--color-cinnabar);
+    color: var(--color-light);
 
     &:hover{
         background-color: transparent;
-        border-color: var(--color-dark);
-        color: var(--color-dark);
+        border-color: var(--color-light);
+        color: var(--color-light);
 
         .svg-icon{
-            @include svg-dark;
+            @include svg-light;
         }
     }
 }

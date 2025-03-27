@@ -252,15 +252,15 @@ html h6, body h6 {
 .btn-dark {
   background-color: var(--color-dark);
   border: 1px solid var(--color-dark);
-  color: var(--color-cinnabar);
+  color: var(--color-light);
 }
 .btn-dark:hover {
   background-color: transparent;
-  border-color: var(--color-dark);
-  color: var(--color-dark);
+  border-color: var(--color-light);
+  color: var(--color-light);
 }
 .btn-dark:hover .svg-icon {
-  filter: invert(0%) sepia(7%) saturate(2656%) hue-rotate(14deg) brightness(96%) contrast(93%);
+  filter: invert(98%) sepia(5%) saturate(847%) hue-rotate(227deg) brightness(116%) contrast(95%);
 }
 
 .container {
@@ -389,36 +389,46 @@ img {
 }
 
 header {
-  padding: 2rem 0;
+  background-color: var(--color-dark);
 }
-header .container {
+header .header-background-container {
+  padding: 1rem 0;
+  border-radius: 30px;
+}
+header .header-background-container .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .container .header-logo {
+header .header-background-container .container .header-logo {
   width: 10rem;
 }
-header .container .header-menu {
+header .header-background-container .container .header-menu {
   display: flex;
   gap: 3rem;
 }
-header .container .header-menu .link {
+header .header-background-container .container .header-menu .link {
   font-size: 1.1rem;
 }
-header .container .btn {
+header .header-background-container .container .header-menu .link:hover {
+  color: var(--color-dark);
+}
+header .header-background-container .container .header-menu .link::after {
+  background-color: var(--color-dark);
+}
+header .header-background-container .container .btn {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-header .container .mobile-menu .menu-button {
+header .header-background-container .container .mobile-menu .menu-button {
   background-color: transparent;
   border: none;
 }
-header .container .mobile-menu .menu-icon {
+header .header-background-container .container .mobile-menu .menu-icon {
   width: 2.5rem;
 }
-header .container .mobile-menu #burger-menu {
+header .header-background-container .container .mobile-menu #burger-menu {
   z-index: 100;
   position: fixed;
   top: 0;
@@ -431,31 +441,31 @@ header .container .mobile-menu #burger-menu {
   transform: translateX(100%);
   transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
 }
-header .container .mobile-menu #burger-menu.hidden {
+header .header-background-container .container .mobile-menu #burger-menu.hidden {
   opacity: 0;
   transform: translateX(100%);
   pointer-events: none;
 }
-header .container .mobile-menu #burger-menu:not(.hidden) {
+header .header-background-container .container .mobile-menu #burger-menu:not(.hidden) {
   opacity: 1;
   transform: translateX(0);
 }
-header .container .mobile-menu #burger-menu .burger-top {
+header .header-background-container .container .mobile-menu #burger-menu .burger-top {
   display: flex;
   flex-direction: column;
   gap: 3rem;
   padding: 3rem 2rem;
 }
-header .container .mobile-menu #burger-menu .burger-top .menu-button {
+header .header-background-container .container .mobile-menu #burger-menu .burger-top .menu-button {
   align-self: start;
 }
-header .container .mobile-menu #burger-menu .burger-top .menu-button .menu-icon {
+header .header-background-container .container .mobile-menu #burger-menu .burger-top .menu-button .menu-icon {
   width: 1.5rem;
 }
-header .container .mobile-menu #burger-menu .burger-top .link {
+header .header-background-container .container .mobile-menu #burger-menu .burger-top .link {
   font-size: 2.5rem;
 }
-header .container .mobile-menu #burger-menu .burger-bottom {
+header .header-background-container .container .mobile-menu #burger-menu .burger-bottom {
   display: flex;
   padding: 2rem;
   gap: 1rem;

@@ -568,7 +568,7 @@ footer .container .search-container .search-bar .search-input {
 @media (min-width: 1400px) {
   .home-hero-section .container .above-the-fold .fold-container {
     width: 20rem;
-    height: 25rem;
+    height: 30rem;
   }
 }
 .home-hero-section .container .above-the-fold .fold-container:nth-child(1) .fold-heading {

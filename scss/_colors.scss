@@ -1,3 +1,4 @@
+//BASE COLORS
 :root{
     --color-dark: #090909;
     --color-light: #f9f9f9;
@@ -6,6 +7,7 @@
     --color-cinnabar: #F04D23;
 }
 
+//SVG COLORS
 @mixin svg-dark{
     filter: invert(0%) sepia(7%) saturate(2656%) hue-rotate(14deg) brightness(96%) contrast(93%);
 }
@@ -20,6 +22,30 @@
 
 @mixin svg-cinnabar{
     filter: invert(46%) sepia(65%) saturate(6691%) hue-rotate(352deg) brightness(110%) contrast(88%);
+}
+
+@mixin svg-chili{
+    filter: invert(27%) sepia(46%) saturate(2809%) hue-rotate(342deg) brightness(99%) contrast(100%);
+}
+
+.svg-light{
+    @include svg-light;
+}
+
+.svg-dark{
+    @include svg-dark;
+}
+
+.svg-fire{
+    @include svg-fire;
+}
+
+.svg-cinnabar{
+    @include svg-cinnabar;
+}
+
+.svg-chili{
+    @include svg-chili;
 }
 
 //BACKGROUND COLORS

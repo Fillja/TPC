@@ -75,24 +75,27 @@
 
 // SVG STYLING
 .svg-icon{
-    height: auto;
     transition: filter .25s ease-in-out;
 }
 
 .svg-large{
     width: 3rem;
+    height: 3rem;
 }
 
 .svg-medium{
     width: 2rem;
+    height: 2rem;
 }
 
 .svg-small{
     width: 1.5rem;
+    height: 1.5rem;
 }
 
 .svg-border{
-    border: solid 1px var(--color-light);
+    border: solid 1px var(--color-chili);
+    background-color: var(--color-chili);
     border-radius: 100%;
     display: flex;
     width: fit-content;
@@ -100,22 +103,6 @@
 
 .svg-wrapper{
     align-self: end;
-}
-
-.svg-light{
-    @include svg-light;
-}
-
-.svg-dark{
-    @include svg-dark;
-}
-
-.svg-fire{
-    @include svg-fire;
-}
-
-.svg-cinnabar{
-    @include svg-cinnabar;
 }
 
 //SCROLL REVEAL STYLING

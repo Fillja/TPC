@@ -17,7 +17,7 @@ section {
   padding: 5rem 0;
 }
 
-.rounded-image, video {
+.rounded-image {
   border-radius: 30px !important;
 }
 
@@ -30,7 +30,7 @@ section {
   src: url("/fonts/Inter-VariableFont_opsz,wght.ttf");
 }
 html, body {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 300;
   line-height: 1.8rem;
   font-family: "Questrial", sans-serif;
@@ -74,6 +74,26 @@ html h6, body h6 {
   --color-cinnabar: #F04D23;
 }
 
+.svg-light {
+  filter: invert(98%) sepia(5%) saturate(847%) hue-rotate(227deg) brightness(116%) contrast(95%);
+}
+
+.svg-dark {
+  filter: invert(0%) sepia(7%) saturate(2656%) hue-rotate(14deg) brightness(96%) contrast(93%);
+}
+
+.svg-fire {
+  filter: invert(18%) sepia(28%) saturate(5187%) hue-rotate(339deg) brightness(118%) contrast(107%);
+}
+
+.svg-cinnabar {
+  filter: invert(46%) sepia(65%) saturate(6691%) hue-rotate(352deg) brightness(110%) contrast(88%);
+}
+
+.svg-chili {
+  filter: invert(27%) sepia(46%) saturate(2809%) hue-rotate(342deg) brightness(99%) contrast(100%);
+}
+
 .bg-light {
   background-color: var(--color-light);
   color: var(--color-dark);
@@ -110,16 +130,31 @@ html h6, body h6 {
 
 .link {
   display: inline-block;
+  position: relative;
   cursor: pointer;
   font-size: 1.1rem;
   font-weight: 500;
   text-decoration: none;
   color: var(--color-dark);
-  transition: all 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out;
 }
 .link:hover {
-  color: var(--color-fire);
-  text-decoration: underline;
+  color: var(--color-chili);
+}
+.link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-chili);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease-in-out;
+}
+.link:hover::after {
+  transform: scaleX(1);
 }
 .link i {
   margin-left: 0.5rem;
@@ -127,16 +162,6 @@ html h6, body h6 {
 }
 
 .active-link {
-  color: var(--color-theme);
-  text-decoration: underline;
-}
-
-.footer-link {
-  color: var(--color-dark);
-  text-decoration: none;
-  transition: all 0.25s ease-in-out;
-}
-.footer-link:hover {
   color: var(--color-theme);
   text-decoration: underline;
 }
@@ -300,24 +325,27 @@ html h6, body h6 {
 }
 
 .svg-icon {
-  height: auto;
   transition: filter 0.25s ease-in-out;
 }
 
 .svg-large {
   width: 3rem;
+  height: 3rem;
 }
 
 .svg-medium {
   width: 2rem;
+  height: 2rem;
 }
 
 .svg-small {
   width: 1.5rem;
+  height: 1.5rem;
 }
 
 .svg-border {
-  border: solid 1px var(--color-light);
+  border: solid 1px var(--color-chili);
+  background-color: var(--color-chili);
   border-radius: 100%;
   display: flex;
   width: -moz-fit-content;
@@ -326,22 +354,6 @@ html h6, body h6 {
 
 .svg-wrapper {
   align-self: end;
-}
-
-.svg-light {
-  filter: invert(98%) sepia(5%) saturate(847%) hue-rotate(227deg) brightness(116%) contrast(95%);
-}
-
-.svg-dark {
-  filter: invert(0%) sepia(7%) saturate(2656%) hue-rotate(14deg) brightness(96%) contrast(93%);
-}
-
-.svg-fire {
-  filter: invert(18%) sepia(28%) saturate(5187%) hue-rotate(339deg) brightness(118%) contrast(107%);
-}
-
-.svg-cinnabar {
-  filter: invert(46%) sepia(65%) saturate(6691%) hue-rotate(352deg) brightness(110%) contrast(88%);
 }
 
 .reveal {
@@ -369,10 +381,10 @@ header .container .header-logo {
 }
 header .container .header-menu {
   display: flex;
-  gap: 1rem;
+  gap: 3rem;
 }
 header .container .header-menu .link {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 header .container .btn {
   display: flex;
@@ -631,13 +643,18 @@ footer .container .search-container .search-bar .search-input {
   }
 }
 
+.home-video-section {
+  padding: 0 !important;
+  margin: 0 !important;
+}
 .home-video-section .showcase-video {
+  display: block;
   width: 100%;
   height: auto;
 }
 @media (min-width: 768px) {
   .home-video-section .showcase-video {
-    height: 80dvh;
+    height: 100dvh;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -657,5 +674,5 @@ footer .container .search-container .search-bar .search-input {
   gap: 1rem;
 }
 .home-contact-section .bullet-list-container .bullet-list .svg-icon {
-  padding: 1rem;
+  padding: 1.3rem;
 }

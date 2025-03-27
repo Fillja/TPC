@@ -4,6 +4,12 @@ const closeButton = document.getElementById('close-button');
 const burgerMenu = document.getElementById('burger-menu');
 const menuItems = burgerMenu.querySelectorAll(".reveal");
 
+document.addEventListener('DOMContentLoaded', () => {
+    if (window.innerWidth <= 768) {
+        burgerMenu.classList.add('hidden');
+    }
+});
+
 burgerButton.addEventListener('click', () => {
     burgerMenu.classList.remove('hidden');
     document.body.style.overflow = 'hidden';

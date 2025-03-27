@@ -273,6 +273,7 @@ html h6, body h6 {
 }
 
 .hidden {
+  visibility: hidden;
   transform: translateX(100%);
   pointer-events: none;
 }

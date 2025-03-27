@@ -9,6 +9,7 @@
 }
 
 .hidden{
+    visibility: hidden; // Ta bort för att få rätt animation på burger menu, men då renderas burger-menu en split-sekund vid page reload
     transform: translateX(100%); 
     pointer-events: none; 
 }

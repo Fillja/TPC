@@ -1,5 +1,4 @@
 // BURGER MENU
-
 const burgerButton = document.getElementById('burger-button');
 const closeButton = document.getElementById('close-button');
 const burgerMenu = document.getElementById('burger-menu');
@@ -28,7 +27,6 @@ closeButton.addEventListener('click', () => {
 
 
 // REVEAL SECTIONS ON SCROLL
-
 document.addEventListener("DOMContentLoaded", () => {
     const sections = document.querySelectorAll("section");
 
@@ -39,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 revealElements(entry.target);
             }
         });
-    }, { threshold: 0.3 });
+    }, { threshold: 0.1 });
 
     sections.forEach((section) => {
         sectionObserver.observe(section);

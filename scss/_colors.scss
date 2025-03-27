@@ -81,7 +81,16 @@
     }
 }
 
-.bg-cinnabar{
+.bg-cinnabar-dark{
     background-color: var(--color-cinnabar);
     color: var(--color-dark);
+}
+
+.bg-cinnabar-light{
+    background-color: var(--color-cinnabar);
+    color: var(--color-light);
+
+    .link{
+        color: var(--color-light);
+    }
 }

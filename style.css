@@ -238,11 +238,11 @@ html h6, body h6 {
 .btn-light {
   background-color: var(--color-light);
   border: 1px solid var(--color-dark);
-  color: var(--color-dark);
+  color: var(--color-cinnabar);
 }
 .btn-light:hover {
   background-color: var(--color-dark);
-  border-color: var(--color-dark);
+  border-color: var(--color-light);
   color: var(--color-light);
 }
 .btn-light:hover .svg-icon {

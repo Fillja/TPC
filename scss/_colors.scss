@@ -67,7 +67,7 @@
     background-color: var(--color-fire);
     color: var(--color-light);
 
-    .link .mobile-link{
+    .link, .mobile-link{
         color: var(--color-light);
     }
 }
@@ -76,7 +76,7 @@
     background-color: var(--color-chili);
     color: var(--color-light);
 
-    .link .mobile-link{
+    .link, .mobile-link{
         color: var(--color-light);
     }
 }
@@ -90,7 +90,7 @@
     background-color: var(--color-cinnabar);
     color: var(--color-light);
 
-    .link .mobile-link{
+    .link, .mobile-link{
         color: var(--color-light);
     }
 }

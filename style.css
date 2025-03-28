@@ -120,7 +120,7 @@ html h6, body h6 {
   background-color: var(--color-fire);
   color: var(--color-light);
 }
-.bg-fire .link .mobile-link {
+.bg-fire .link, .bg-fire .mobile-link {
   color: var(--color-light);
 }
 
@@ -128,7 +128,7 @@ html h6, body h6 {
   background-color: var(--color-chili);
   color: var(--color-light);
 }
-.bg-chili .link .mobile-link {
+.bg-chili .link, .bg-chili .mobile-link {
   color: var(--color-light);
 }
 
@@ -141,7 +141,7 @@ html h6, body h6 {
   background-color: var(--color-cinnabar);
   color: var(--color-light);
 }
-.bg-cinnabar-light .link .mobile-link {
+.bg-cinnabar-light .link, .bg-cinnabar-light .mobile-link {
   color: var(--color-light);
 }
 
@@ -262,15 +262,15 @@ html h6, body h6 {
 .btn-dark {
   background-color: var(--color-dark);
   border: 1px solid var(--color-dark);
-  color: var(--color-light);
+  color: var(--color-cinnabar);
 }
 .btn-dark:hover {
   background-color: transparent;
-  border-color: var(--color-light);
-  color: var(--color-light);
+  border-color: var(--color-dark);
+  color: var(--color-dark);
 }
 .btn-dark:hover .svg-icon {
-  filter: invert(98%) sepia(5%) saturate(847%) hue-rotate(227deg) brightness(116%) contrast(95%);
+  filter: invert(0%) sepia(7%) saturate(2656%) hue-rotate(14deg) brightness(96%) contrast(93%);
 }
 
 .container {

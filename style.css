@@ -112,7 +112,7 @@ html h6, body h6 {
   background-color: var(--color-dark);
   color: var(--color-light);
 }
-.bg-dark .link {
+.bg-dark .link, .bg-dark .mobile-link {
   color: var(--color-light);
 }
 
@@ -120,7 +120,7 @@ html h6, body h6 {
   background-color: var(--color-fire);
   color: var(--color-light);
 }
-.bg-fire .link {
+.bg-fire .link .mobile-link {
   color: var(--color-light);
 }
 
@@ -128,7 +128,7 @@ html h6, body h6 {
   background-color: var(--color-chili);
   color: var(--color-light);
 }
-.bg-chili .link {
+.bg-chili .link .mobile-link {
   color: var(--color-light);
 }
 
@@ -141,7 +141,7 @@ html h6, body h6 {
   background-color: var(--color-cinnabar);
   color: var(--color-light);
 }
-.bg-cinnabar-light .link {
+.bg-cinnabar-light .link .mobile-link {
   color: var(--color-light);
 }
 
@@ -178,9 +178,13 @@ html h6, body h6 {
   font-size: 0.9rem;
 }
 
-.active-link {
-  color: var(--color-theme);
-  text-decoration: underline;
+.mobile-link {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--color-dark);
 }
 
 .btn {

@@ -1,12 +1,13 @@
 header{
-    // padding: 2rem 0;
-    background-color: var(--color-dark);
+    padding: 2rem 0;
+    // background-color: var(--color-dark); ORANGE HEADER STYLING
     position: relative;
     z-index: 10;
 
-    .header-background-container{
-        padding: 1rem 0;
-        border-radius: 30px;
+    //ORANGE HEADER STYLING
+    // .header-background-container{
+    //     padding: 1rem 0;
+    //     border-radius: 30px;
 
         .container{
             display: flex;
@@ -24,13 +25,14 @@ header{
                 .link{
                     font-size: 1.1rem;
 
-                    &:hover{
-                        color: var(--color-dark);
-                    }
+                    // ORANGE HEADER STYLING
+                    // &:hover{
+                    //     color: var(--color-dark);
+                    // }
 
-                    &::after{
-                        background-color: var(--color-dark);
-                    }
+                    // &::after{
+                    //     background-color: var(--color-dark);
+                    // }
                 }
             }
     
@@ -104,5 +106,5 @@ header{
             }
         }
 
-    }
+    // }
 }

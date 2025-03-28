@@ -17,37 +17,23 @@
 
     .container{
         z-index: 2;
+   
+        .text-container{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 2rem 2rem 4rem 2rem;
+            border-radius: 30px;
 
-        .image-text-container{
+            h3{
+                font-weight: 500;
+                padding-bottom: 1rem;
+            }
 
-            .image-container{
+            .text-separation{
                 display: flex;
                 flex-direction: column;
                 gap: 1rem;
-    
-                .information-image{
-                    width: 100%;
-                }
-            }
-    
-    
-            .text-container{
-                display: flex;
-                flex-direction: column;
-                height: 100%;
-                padding: 2rem 2rem 4rem 2rem;
-                border-radius: 30px;
-    
-                h3{
-                    font-weight: 500;
-                    padding-bottom: 1rem;
-                }
-    
-                .text-separation{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 1rem;
-                }
             }
         }
     }

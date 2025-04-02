@@ -49,10 +49,7 @@
     }
 }
 
-img{
-    box-sizing: content-box;
-}
-
+//IMAGE-TEXT SECTION STYLING
 .image-text-container{
     display: flex;
     flex-direction: column;
@@ -73,11 +70,11 @@ img{
         @include tablet{
             max-width: 50%;
         }
-        
-        img{
-            max-width: 100%;
-            max-height: 100%;
-            height: 100%;
+
+        .image{
+            @include tablet{
+                height: 100%;
+            }
         }
     }
 }
@@ -85,6 +82,7 @@ img{
 // SVG STYLING
 .svg-icon{
     transition: filter .25s ease-in-out;
+    box-sizing: content-box;
 }
 
 .svg-large{
@@ -103,8 +101,8 @@ img{
 }
 
 .svg-border{
-    border: solid 1px var(--color-chili);
-    background-color: var(--color-chili);
+    border: solid 1px var(--color-cinnabar);
+    background-color: var(--color-cinnabar);
     border-radius: 100%;
     display: flex;
     width: fit-content;

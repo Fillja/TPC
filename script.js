@@ -1,3 +1,10 @@
+// HANDLING POTENTIAL CACHING
+window.onpageshow = function(event) {
+    if (event.persisted) {
+        window.location.reload();
+    }
+};
+
 // BURGER MENU
 const burgerButton = document.getElementById('burger-button');
 const closeButton = document.getElementById('close-button');
